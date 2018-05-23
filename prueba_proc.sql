@@ -33,6 +33,7 @@ DELETE FROM CONTA.FOREX_CONFVAL_USER FX WHERE FX.FX_USER = pIdUserFWT;
 END IF;
 INSERT INTO CONTA.FOREX_CONFVAL_USER(FX_USER, FX_VALORES) VALUES(pIdUSerFWT, pValores);
 COMMIT;
+-- esto es una prueba para ver que se replica en el repositorio remoto
 EXCEPTION
 WHEN OTHERS THEN
 pRetorno := -1;
